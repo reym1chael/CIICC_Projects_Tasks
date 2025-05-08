@@ -28,6 +28,8 @@ public class Task5 {
             }   
         }
 
+        scanner.close();
+
         Arrays.sort(numbers1); // SORTS IN ASCENDING ORDER
 
         if ((numbers1[0] == numbers1[1]) && (numbers1[1] == numbers1[2]) ){ // CHECKS IF ALL NUMBERS HERE ARE EQUAL
@@ -37,7 +39,7 @@ public class Task5 {
             System.out.println("Largest number is: " + numbers1[2]); // GETS THE NUMBER FROM LAST INDEX FROM SORTED ARRAY
         };
         
-        scanner.close();
+        
         
 
 }
