@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
+        // check kung gumana
         Scanner scanner = new Scanner(System.in);
         //Integer [] numbers = {3, 2, 1};
         int [] numbers = {3, 2, 1};
