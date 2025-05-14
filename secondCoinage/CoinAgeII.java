@@ -79,11 +79,11 @@ public class CoinAgeII {
     public String toString() {
         return
             "\nPerson: \t\t" + getPerson().toString() + "" + 
-            "\nWalletAddress: \t\t" + getWalletAddress() + "" +       //2
-            "\nTokens: \t\t" + getTokenQty() + " CNG" +               //3
+            "\nWalletAddress: \t\t" + getWalletAddress() + "" +           //2
+            "\nTokens: \t\t" + getTokenQty() + " CNG" +                   //3
             "\nExchange Rate: \t\t" + "1 CNG = " + getRate() + " PHP" +   //4  
-            "\nMarket Value: \t\t" + getTokenMktVal() + " PHP" +      //5
-            "\nActive Account: \t" + isIsActive() + "" +              //6
+            "\nMarket Value: \t\t" + getTokenMktVal() + " PHP" +          //5
+            "\nActive Account: \t" + isIsActive() + "" +                  //6
             "\n";
     }
 
