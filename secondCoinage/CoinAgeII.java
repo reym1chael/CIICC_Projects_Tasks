@@ -91,10 +91,12 @@ public class CoinAgeII {
     public static void main(String[] args) {
 
         // user list
-        CoinAgeII user1 = new CoinAgeII(new PersonDetails("John", "Reyes", "jreyes@sample.com", "456"), 
-                                123 , 800_000, true);
-        CoinAgeII user2 = new CoinAgeII(new PersonDetails("Adam", "James", "ajames@sample.com", "samplepass"), //check pass length in sout
-                            124 , 20_000, true);
+        CoinAgeII user1 = new CoinAgeII(
+                            new PersonDetails("John", "Reyes", "jreyes@sample.com", "456"), 
+                                123 , 800_000, true );
+        CoinAgeII user2 = new CoinAgeII(
+                            new PersonDetails("Adam", "James", "ajames@sample.com", "samplepass"), //check pass length in sout
+                            124 , 20_000, true );
 
         Scanner userinput = new Scanner(System.in);
 
