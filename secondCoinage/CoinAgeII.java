@@ -87,7 +87,6 @@ public class CoinAgeII {
             "\n";
     }
 
-
     public static void main(String[] args) {
 
         // user list
@@ -126,7 +125,6 @@ public class CoinAgeII {
 
         userinput.close();
         
-        
     }
   
 }
@@ -145,8 +143,7 @@ class PersonDetails {
         this.password = password;
     }
     
-
-    // Override toString() method
+    // to string
     @Override
     public String toString() {
         return firstName + " " + lastName + 
