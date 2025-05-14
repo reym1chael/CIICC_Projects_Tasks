@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Main {
+public class Task4{
     public static void main(String[] args) {
         System.out.println("Enter a WORD: ");
         Scanner input1 =  new Scanner(System.in);
