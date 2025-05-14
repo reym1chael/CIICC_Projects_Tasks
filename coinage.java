@@ -80,8 +80,10 @@ public class coinage {
 
     public static void main(String[] args) {
         //Person p1 = new Person("John", "Reyes", "jreyes@sample.com");
-        coinage user1 = new coinage(new Person("John", "Reyes", "jreyes@sample.com"), 123 , 22, true);
-        coinage user2 = new coinage(new Person("Adam", "James", "ajames@sample.com"), 124 , 20_000, true);
+        coinage user1 = new coinage(new Person("John", "Reyes", "jreyes@sample.com"), 
+                                123 , 22, true);
+        coinage user2 = new coinage(new Person("Adam", "James", "ajames@sample.com"), 
+                                124 , 20_000, true);
         System.out.println(user1);
         System.out.println(user2);
         //System.out.println(p1);
