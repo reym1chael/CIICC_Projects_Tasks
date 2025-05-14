@@ -150,4 +150,5 @@ class PersonDetails {
         "\nEmail Address:\t\t" + email +
         "\nPassword: \t\t" + "[" + "*".repeat(password.length()) + "]";
     }
+    
 }
