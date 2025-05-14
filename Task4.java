@@ -16,6 +16,8 @@ public class Task4{
         else {
             System.out.println("The input string is not a palindrome");
         }
+
+        input1.close();
         
         System.out.println("The input is: " + input);
         System.out.println("The reverse is: " + sb1);
