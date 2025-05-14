@@ -1,5 +1,5 @@
 
-public class Main {
+public class testingEquality {
     public static void main(String[] args) {
         
         String a = new String("Wow");
