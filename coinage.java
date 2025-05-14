@@ -69,11 +69,11 @@ public class coinage {
     public String toString() {
         return
             "\nPerson: \t\t" + getPerson().toString() + "" + 
-            "\nWalletAddress: \t\t'" + getWalletAddress() + "'" +   //2
-            "\nTokens: \t\t'" + getTokenQty() + "'" +               //3
-            "\nExchange Rate: \t\t'" + getRate() + "'" +            //4  
-            "\nMarket Value: \t\t'" + getTokenMktVal() + "'" +      //5
-            "\nActive Account: \t'" + isIsActive() + "'"            //6
+            "\nWalletAddress: \t\t" + getWalletAddress() + "" +   //2
+            "\nTokens: \t\t" + getTokenQty() + " CNG" +               //3
+            "\nExchange Rate: \t\t" + "1 CNG = " + getRate() + "" +            //4  
+            "\nMarket Value: \t\t" + getTokenMktVal() + " PHP" +      //5
+            "\nActive Account: \t" + isIsActive() + ""            //6
             ;
     }
 
@@ -83,7 +83,7 @@ public class coinage {
         coinage user1 = new coinage(new Person("John", "Reyes", "jreyes@sample.com"), 
                                 123 , 22, true);
         coinage user2 = new coinage(new Person("Adam", "James", "ajames@sample.com"), 
-                                124 , 20_000, true);
+                            124 , 20_000, true);
         System.out.println(user1);
         System.out.println(user2);
         //System.out.println(p1);
