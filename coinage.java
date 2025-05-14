@@ -3,21 +3,20 @@ public class coinage {
     private Person person;
     private int walletAddress;
     private float tokenQty;
-    private float rate = tokenQty * 0.45f;
+    private float rate = 0.45f;
     private float tokenMktVal;
     private boolean isActive;
 
-    public coinage(Person person, int walletAddress, float tokenQty, float rate ,float tokenMktVal, boolean isActive){
+    public coinage(Person person, int walletAddress, float tokenQty, boolean isActive){
         this.person = person;
         this.walletAddress = walletAddress;
         this.tokenQty = tokenQty;
-        this.rate = rate;
-        this.tokenMktVal = tokenMktVal;
         this.isActive = isActive;
     }
 
     public Person getPerson() {
-        return person;
+        return this.person;
+        
     }
 
     public void setPerson(Person person) {
@@ -40,22 +39,23 @@ public class coinage {
         this.tokenQty = tokenQty;
     }
 
+    public void setRate(float rate) {
+        
+    }
+
     public float getRate() {
         return rate;
     }
 
-    public void setRate(float rate) {
-        this.rate = rate;
+    public void setTokenMktVal(float tokenMktVal1) {
+        this.tokenMktVal = tokenMktVal1;
     }
 
     public float getTokenMktVal() {
-        return tokenMktVal;
+        return getTokenQty() * getRate();
     }
 
-    public void setTokenMktVal(float tokenMktVal) {
-        this.tokenMktVal = tokenMktVal;
-    }
-
+    
     public boolean isIsActive() {
         return this.isActive;
     }
@@ -67,17 +67,47 @@ public class coinage {
     // to string
 
     public String toString() {
-        return "{" +
-            " person='" + getPerson() + "'" +
-            ", walletAddress='" + getWalletAddress() + "'" +
-            ", tokenQty='" + getTokenQty() + "'" +
-            ", rate='" + getRate() + "'" +
-            ", tokenMktVal='" + getTokenMktVal() + "'" +
-            ", isActive='" + isIsActive() + "'" +
-            "}";
+        return
+            "\nPerson: \t\t" + getPerson().toString() + "" + 
+            "\nWalletAddress: \t\t'" + getWalletAddress() + "'" +   //2
+            "\nTokens: \t\t'" + getTokenQty() + "'" +               //3
+            "\nExchange Rate: \t\t'" + getRate() + "'" +            //4  
+            "\nMarket Value: \t\t'" + getTokenMktVal() + "'" +      //5
+            "\nActive Account: \t'" + isIsActive() + "'"            //6
+            ;
     }
 
 
-    // psvm1
+    public static void main(String[] args) {
+        //Person p1 = new Person("John", "Reyes", "jreyes@sample.com");
+        coinage user1 = new coinage(new Person("John", "Reyes", "jreyes@sample.com"), 123 , 22, true);
+        coinage user2 = new coinage(new Person("Adam", "James", "ajames@sample.com"), 124 , 20_000, true);
+        System.out.println(user1);
+        System.out.println(user2);
+        //System.out.println(p1);
+        
+        
+    }
   
+}
+
+class Person {
+    
+    private String firstName; 
+    private String lastName;
+    private String email;
+
+    public Person(String firstName,String lastName,String email){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;    
+    }
+    
+
+    // Override toString() method
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " (" + email + ")";
+
+    }
 }
