@@ -31,7 +31,7 @@ public class Task8 {
     public static void main(String[] args) {
         Task8 objTask8 = new Task8();
         
-        System.out.println("Sum of all parameters only: " + objTask8.sumOfAllParameters(4,5,10,11));
+        System.out.println("Sum of all (cummulative) parameters : " + objTask8.sumOfAllParameters(4,5,10,11));
     }
 
 }
