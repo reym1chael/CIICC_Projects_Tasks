@@ -10,6 +10,7 @@ public class Task8 {
     public int sumOfAllParameters (int...x){
         
         System.out.println("Parameters: " + x[0] + ", " + x[1] + ", " + x[2]); // how to add all indexes that depends on the input in main method without manual input
+
         int a = 0;
         int b = 0;
         int sum = 0;
@@ -24,14 +25,14 @@ public class Task8 {
             System.out.println("\n");
             sum += sum2;
         }
-
         return sum;
     }
 
     public static void main(String[] args) {
+
         Task8 objTask8 = new Task8();
-        
         System.out.println("Sum of all (cummulative) parameters : " + objTask8.sumOfAllParameters(4,5,10,11));
+
     }
 
 }
