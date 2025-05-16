@@ -9,22 +9,29 @@ public class Task8 {
 
     public int sumOfAllParameters (int...x){
         
-
-        System.out.println(x[0] + ", " + x[1] + ", " + x[2] + ", " + x[x.length - 1]);
-
-
-
-        // this is just the sum of all parameters
+        System.out.println("Parameters: " + x[0] + ", " + x[1] + ", " + x[2]);
+        int a = 0;
+        int b = 0;
         int sum = 0;
-        for (int num: x){
-            sum += num;
+        for (a = 0; a < x.length; a++){
+            System.out.println("Values of parameters " + x[a]);
+            int sum2 = 0;
+            for (b = 0; b <= x[a]; b++){
+                System.out.println("Values of B: " + b);
+                sum2 += b;
+            }
+            System.out.println("Sum of B: " + sum2);
+            System.out.println("\n");
+            sum += sum2;
         }
+
         return sum;
     }
 
     public static void main(String[] args) {
         Task8 objTask8 = new Task8();
-        System.out.println(objTask8.sumOfAllParameters(4,5,10));
+        
+        System.out.println("Sum of all parameters only: " + objTask8.sumOfAllParameters(4,5,10));
     }
 
 }
