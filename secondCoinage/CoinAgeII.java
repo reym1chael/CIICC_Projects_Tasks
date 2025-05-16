@@ -95,7 +95,7 @@ public class CoinAgeII {
                                 123 , 800_000, true );
         CoinAgeII user2 = new CoinAgeII(
                             new PersonDetails("Adam", "James", "ajames@sample.com", "samplepass"), //check pass length in sout
-                            124 , 20_000, true );
+                                124 , 20_000, true );
 
         Scanner userinput = new Scanner(System.in);
 
@@ -148,7 +148,7 @@ class PersonDetails {
     public String toString() {
         return firstName + " " + lastName + 
         "\nEmail Address:\t\t" + email +
-        "\nPassword: \t\t" + "[" + "*".repeat(password.length()) + "]";
+        "\nPassword: \t\t" + "[" + "*".repeat(password.length()) + "]"; //check pass length in sout
     }
     
 }
